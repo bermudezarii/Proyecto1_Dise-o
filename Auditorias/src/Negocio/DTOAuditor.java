@@ -3,36 +3,38 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Datos;
+package Negocio;
+
+
 
 /**
  *
- * @author Ariana
+ * @author Arii
  */
-public class Persona {
+public class DTOAuditor {
     private int cedula; 
     private String nombre; 
     private String apellido1; 
     private String apellido2; 
     private int telefono; 
-    private String correo; 
+    private String correo;
+    private int grado; //le puse int porq se saca de la interfaz
+    private int nota; 
+    private String resultado; 
 
-    public Persona(int cedula, String nombre, String apellido1, String apellido2, int telefono, String correo) {
+    public DTOAuditor(int cedula, String nombre, String apellido1, String apellido2, int telefono, String correo, int grado, int nota, String resultado) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido1 = apellido1;
         this.apellido2 = apellido2;
         this.telefono = telefono;
         this.correo = correo;
+        this.grado = grado;
+        this.nota = nota;
+        this.resultado = resultado;
     }
 
-    public String getCorreo() {
-        return correo;
-    }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
-    }
 
     public int getCedula() {
         return cedula;
@@ -74,9 +76,36 @@ public class Persona {
         this.telefono = telefono;
     }
 
-    @Override
-    public String toString() {
-        return "Persona{" + "cedula=" + cedula + ", nombre=" + nombre + ", apellido1=" + apellido1 + ", apellido2=" + apellido2 + ", telefono=" + telefono + ", correo=" + correo + '}';
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public int getGrado() {
+        return grado;
+    }
+
+    public void setGrado(int grado) {
+        this.grado = grado;
+    }
+
+    public int getNota() {
+        return nota;
+    }
+
+    public void setNota(int nota) {
+        this.nota = nota;
+    }
+
+    public String getResultado() {
+        return resultado;
+    }
+
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
     }
     
     

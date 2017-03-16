@@ -15,4 +15,5 @@ public class Cliente extends Persona {
         super(cedula, nombre, apellido1, apellido2, telefono, correo);
     }
     
+    
 }

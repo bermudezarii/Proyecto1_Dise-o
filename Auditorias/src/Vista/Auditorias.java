@@ -13,11 +13,15 @@ package Vista;
  * -METODOS DE AUDITORIA 
  * ESTRATEGIA-N
  * -FALTA TERMINAR METODOS
- * 
+ * DTO,DAO,UI,OFICINA
+ * -FALTA TERMINAR METODOS
  * 
  * DUDAS 
  * -como implemento que usa un strategy?
- * -hay que hacer una base para la tarea? 
+ * -hay que hacer una base para la tarea?
+ * -revisar lo que devuelve cada funcion porq casi todo 
+ * lo que tenia le puse boolean xD 
+ * 
  */
 public class Auditorias {
 

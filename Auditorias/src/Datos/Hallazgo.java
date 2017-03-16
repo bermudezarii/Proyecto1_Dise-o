@@ -66,6 +66,11 @@ public class Hallazgo {
     public void setAuditor(Auditor auditor) {
         this.auditor = auditor;
     }
+
+    @Override
+    public String toString() {
+        return "Hallazgo{" + "id=" + id + ", fechaRegistro=" + fechaRegistro + ", tipoHallazgo=" + tipoHallazgo + ", descripcion=" + descripcion + ", auditor=" + auditor + '}';
+    }
     
  
 }

@@ -34,6 +34,11 @@ public class Auditor extends Persona {
     public void setNota(Evaluacion nota) {
         this.nota = nota;
     }
+
+    @Override
+    public String toString() {
+        return "Auditor{" + "grado=" + grado + ", nota=" + nota + '}';
+    }
     
     
 }

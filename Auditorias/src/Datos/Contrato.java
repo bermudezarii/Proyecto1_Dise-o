@@ -12,25 +12,21 @@ import java.util.Date;
  * @author Arii
  */
 public class Contrato {
-    private Date fecha; 
+    private Date fechaInicio; 
+    private Date fechaFinal; 
     private int costo; 
     private Auditoria auditoria; 
     private Cliente cliente; 
 
-    public Contrato(Date fecha, int costo, Auditoria auditoria, Cliente cliente) {
-        this.fecha = fecha;
+    public Contrato(Date fechaInicio, Date fechaFinal, int costo, Auditoria auditoria, Cliente cliente) {
+        this.fechaInicio = fechaInicio;
+        this.fechaFinal = fechaFinal;
         this.costo = costo;
         this.auditoria = auditoria;
         this.cliente = cliente;
     }
 
-    public Date getFecha() {
-        return fecha;
-    }
 
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
-    }
 
     public int getCosto() {
         return costo;
@@ -54,6 +50,22 @@ public class Contrato {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    public Date getFechaInicio() {
+        return fechaInicio;
+    }
+
+    public void setFechaInicio(Date fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public Date getFechaFinal() {
+        return fechaFinal;
+    }
+
+    public void setFechaFinal(Date fechaFinal) {
+        this.fechaFinal = fechaFinal;
     }
    
   

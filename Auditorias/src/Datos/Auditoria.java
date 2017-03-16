@@ -14,24 +14,22 @@ import java.util.Date;
  */
 public class Auditoria {
     private int id; 
-    private Date fchinicio; 
-    private Date fchfinal; 
     private ArrayList<Auditor> auditores = new ArrayList<>();
     private Cliente cliente; 
     private ArrayList<Hallazgo> hallazgos = new ArrayList<>(); 
     private Tipo tipo;
     private Naturaleza naturaleza;
-    //FALTA HACER EL STRATEGY 
+    private Strategy estrategia; 
 
-    public Auditoria(int id, Date fchinicio, Date fchfinal, Cliente cliente, Tipo tipo, Naturaleza naturaleza) {
+    public Auditoria(int id, Cliente cliente, Tipo tipo, Naturaleza naturaleza, Strategy estrategia) {
         this.id = id;
-        this.fchinicio = fchinicio;
-        this.fchfinal = fchfinal;
         this.cliente = cliente;
         this.tipo = tipo;
         this.naturaleza = naturaleza;
+        this.estrategia = estrategia;
     }
 
+ 
 
     public int getId() {
         return id;
@@ -41,21 +39,6 @@ public class Auditoria {
         this.id = id;
     }
 
-    public Date getFchinicio() {
-        return fchinicio;
-    }
-
-    public void setFchinicio(Date fchinicio) {
-        this.fchinicio = fchinicio;
-    }
-
-    public Date getFchfinal() {
-        return fchfinal;
-    }
-
-    public void setFchfinal(Date fchfinal) {
-        this.fchfinal = fchfinal;
-    }
 
     public ArrayList<Auditor> getAuditores() {
         return auditores;
@@ -96,6 +79,16 @@ public class Auditoria {
     public void setHallazgos(ArrayList<Hallazgo> hallazgos) {
         this.hallazgos = hallazgos;
     }
+
+    public Strategy getEstrategia() {
+        return estrategia;
+    }
+
+    public void setEstrategia(Strategy estrategia) {
+        this.estrategia = estrategia;
+    }
+    
+    
     
     public void registrarHallazgo(Hallazgo nuevo){
     
