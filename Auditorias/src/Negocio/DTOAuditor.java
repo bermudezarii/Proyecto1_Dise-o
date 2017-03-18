@@ -5,6 +5,8 @@
  */
 package Negocio;
 
+import Datos.GradoAcademico;
+
 
 
 /**
@@ -18,8 +20,7 @@ public class DTOAuditor {
     private String apellido2; 
     private int telefono; 
     private String correo;
-    private int grado; //le puse int porq se saca de la interfaz
-    private int nota; 
+    private GradoAcademico grado;
     private String resultado;
     
     public int getCedula() {
@@ -70,20 +71,12 @@ public class DTOAuditor {
         this.correo = correo;
     }
 
-    public int getGrado() {
+    public GradoAcademico getGrado() {
         return grado;
     }
 
-    public void setGrado(int grado) {
+    public void setGrado(GradoAcademico grado) {
         this.grado = grado;
-    }
-
-    public int getNota() {
-        return nota;
-    }
-
-    public void setNota(int nota) {
-        this.nota = nota;
     }
 
     public String getResultado() {

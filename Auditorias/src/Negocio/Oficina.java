@@ -138,57 +138,5 @@ public class Oficina {
         return (Contrato) contratos.selectUno(1);
     }
     
-    /*
-    public boolean borrarCliente(int id){
-        //def 
-        return true; 
-    }
-    
-    /*
-    public boolean agregarAuditor(DTOAuditor info){
-        //def 
-        return true; 
-    }
-    
-    public boolean modificarAuditor(DTOAuditor info){
-        //def
-        return true; 
-    }
-    
-    
-    public Auditor consultarAuditor(DTOAuditor){
-        //def 
-        return true; 
-    }
-    
-    
-    public boolean borrarAuditor(int id){
-        //def 
-        return true; 
-    }
-    
-    public boolean agregarAuditoria(DTOAuditoria info){
-        //def 
-        return true; 
-    }
-    
-    public boolean modificarAuditoria(DTOAuditoria info){
-        //def
-        return true; 
-    }
-    
-    
-    public Auditoria consultarAuditoria(DTOAuditoria){
-        //def 
-        return true; 
-    }
-    
-    
-    public boolean borrarAuditoria(int id){
-        //def 
-        return true; 
-    }
-    */
-    
 }
     

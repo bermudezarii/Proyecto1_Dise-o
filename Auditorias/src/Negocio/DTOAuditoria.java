@@ -12,10 +12,7 @@ package Negocio;
 public class DTOAuditoria {
     private int id; 
     private int tipo; 
-    private int naturaleza;
-    //def 
-    //no se que hacer con el resto 
-    //help 
+    private int naturaleza;s
 
     public int getId() {
         return id;
