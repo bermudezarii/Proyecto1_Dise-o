@@ -21,16 +21,6 @@ public class Auditoria {
     private Naturaleza naturaleza;
     private Strategy estrategia; 
 
-    public Auditoria(int id, Cliente cliente, Tipo tipo, Naturaleza naturaleza, Strategy estrategia) {
-        this.id = id;
-        this.cliente = cliente;
-        this.tipo = tipo;
-        this.naturaleza = naturaleza;
-        this.estrategia = estrategia;
-    }
-
- 
-
     public int getId() {
         return id;
     }

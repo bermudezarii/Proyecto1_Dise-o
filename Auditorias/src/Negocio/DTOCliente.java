@@ -18,16 +18,6 @@ public class DTOCliente {
     private String correo; 
     private String resultado; 
 
-    public DTOCliente(int cedula, String nombre, String apellido1, String apellido2, int telefono, String correo, String resultado) {
-        this.cedula = cedula;
-        this.nombre = nombre;
-        this.apellido1 = apellido1;
-        this.apellido2 = apellido2;
-        this.telefono = telefono;
-        this.correo = correo;
-        this.resultado = resultado;
-    }
-
     public int getCedula() {
         return cedula;
     }

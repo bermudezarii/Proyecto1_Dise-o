@@ -18,16 +18,6 @@ public class Contrato {
     private Auditoria auditoria; 
     private Cliente cliente; 
 
-    public Contrato(Date fechaInicio, Date fechaFinal, int costo, Auditoria auditoria, Cliente cliente) {
-        this.fechaInicio = fechaInicio;
-        this.fechaFinal = fechaFinal;
-        this.costo = costo;
-        this.auditoria = auditoria;
-        this.cliente = cliente;
-    }
-
-
-
     public int getCosto() {
         return costo;
     }

@@ -20,22 +20,8 @@ public class DTOAuditor {
     private String correo;
     private int grado; //le puse int porq se saca de la interfaz
     private int nota; 
-    private String resultado; 
-
-    public DTOAuditor(int cedula, String nombre, String apellido1, String apellido2, int telefono, String correo, int grado, int nota, String resultado) {
-        this.cedula = cedula;
-        this.nombre = nombre;
-        this.apellido1 = apellido1;
-        this.apellido2 = apellido2;
-        this.telefono = telefono;
-        this.correo = correo;
-        this.grado = grado;
-        this.nota = nota;
-        this.resultado = resultado;
-    }
-
-
-
+    private String resultado;
+    
     public int getCedula() {
         return cedula;
     }

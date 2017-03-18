@@ -5,28 +5,31 @@
  */
 package Negocio;
 
+import Datos.Auditor;
+
 /**
  *
  * @author Arii
  */
 public class DAOAuditorBD {
-    public boolean agregar(DTOAuditor dtoA){
+    public boolean agregar(Auditor pAuditor){
         //def 
         return true; 
     }
     
-    public boolean eliminar(DTOAuditor dtoA){
+    public boolean eliminar(Auditor pAuditor){
         //def 
         return true; 
     }
 
-    public boolean modificar(DTOAuditor dtoA){
+    public boolean modificar(Auditor pAuditor){
         //def 
         return true; 
     }
     
-    public boolean ver(DTOAuditor dtoA){
-        //def 
-        return true; 
+    public Auditor ver(Auditor pAuditor){
+        System.out.println("Estoy en el DAOAuditor realizando la consulta.\nSe realizo la consulta.");
+        
+        return null; 
     }
 }

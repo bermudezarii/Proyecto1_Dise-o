@@ -3,7 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Arii/Downloads/Proyecto1_Dise-o-master/Proyecto1_Dise-o-master/Auditorias/src/Vista/Auditorias.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Negocio/UICliente.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Negocio/UIAuditor.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Datos/Persona.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Datos/Auditor.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Vista/Auditorias.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Negocio/DTOCliente.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Negocio/DAOContratoDB.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Vista/FrMaster.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Negocio/Oficina.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Vista/FrAuditor.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Datos/Cliente.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Vista/FrCliente.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Negocio/GestorCliente.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Vista/FrContrato.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Vista/FrAuditoria.java</file>
+            <file>file:/Users/ErickHdez/Documents/Repositories/Proyecto1_Dise-o/Auditorias/src/Negocio/DAOClienteBD.java</file>
         </group>
     </open-files>
 </project-private>

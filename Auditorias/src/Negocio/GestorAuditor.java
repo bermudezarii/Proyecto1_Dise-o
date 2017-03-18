@@ -14,19 +14,18 @@ import java.util.ArrayList;
  */
 public class GestorAuditor extends Gestor{
     private ArrayList<Auditor> auditores; 
-    private DAOAuditorBD daoAuditor; 
+    private DAOAuditorBD daoA; 
 
-    public GestorAuditor(ArrayList<Auditor> auditores, DAOAuditorBD daoAuditor) {
+    public GestorAuditor() {
         this.auditores = new ArrayList<>();
-        this.daoAuditor = daoAuditor;
     }
 
     public DAOAuditorBD getDaoAuditor() {
-        return daoAuditor;
+        return daoA;
     }
 
     public void setDaoAuditor(DAOAuditorBD daoAuditor) {
-        this.daoAuditor = daoAuditor;
+        this.daoA= daoAuditor;
     }
   
     
@@ -47,7 +46,9 @@ public class GestorAuditor extends Gestor{
 
     @Override
     public Object selectUno(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Estoy en el gestor de auditores llamando al DAOAuditor.");
+        daoA = new DAOAuditorBD();
+        return daoA.ver(new Auditor());
     }
 
     @Override

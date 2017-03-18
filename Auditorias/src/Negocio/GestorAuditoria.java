@@ -14,8 +14,9 @@ import java.util.ArrayList;
  */
 public class GestorAuditoria extends Gestor{
     private ArrayList<Auditoria> auditorias;
+    private DAOAuditoriaBD daoAu;
 
-    public GestorAuditoria(ArrayList<Auditoria> auditorias) {
+    public GestorAuditoria() {
         this.auditorias = new ArrayList<>();
     }
           
@@ -37,7 +38,9 @@ public class GestorAuditoria extends Gestor{
 
     @Override
     public Object selectUno(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Estoy en el gestor de auditorias llamando al DAOAuditorias.");
+        daoAu = new DAOAuditoriaBD();
+        return daoAu.ver(new Auditoria());
     }
 
     @Override

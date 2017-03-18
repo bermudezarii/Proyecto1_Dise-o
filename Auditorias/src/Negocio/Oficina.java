@@ -8,6 +8,7 @@ package Negocio;
 import Datos.Auditor;
 import Datos.Auditoria;
 import Datos.Cliente;
+import Datos.Contrato;
 import Datos.Naturaleza;
 import Datos.Tipo;
 import java.util.Date;
@@ -25,16 +26,12 @@ public class Oficina {
     private GestorAuditoria auditorias; 
     private GestorAuditor auditores; 
 
-    public Oficina(int id, int telefono, String correo, GestorCliente cartera, GestorContrato contratos, GestorAuditoria auditorias, GestorAuditor auditores) {
-        this.id = id;
-        this.telefono = telefono;
-        this.correo = correo;
-        this.cartera = cartera;
-        this.contratos = contratos;
-        this.auditorias = auditorias;
-        this.auditores = auditores;
+    public Oficina() {
+        cartera = new GestorCliente();
+        auditores = new GestorAuditor();
+        auditorias = new GestorAuditoria();
+        contratos = new GestorContrato();
     }
-    
     
     public int getId() {
         return id;
@@ -107,16 +104,41 @@ public class Oficina {
         this.auditores = auditores;
     }
     
-    
-    
-    
-   /* 
-    public Cliente consultarCliente(DTOCliente){
-        //def 
-        return true; 
+    private void printEstoyAqui() {
+        System.out.print("Estoy en la oficina llamando al gestor ");
     }
-    */
     
+    
+    
+    public Cliente consultarCliente(DTOCliente dtoC){
+        printEstoyAqui();
+        System.out.println("de clientes para consultar al cliente.");
+        
+        return (Cliente) cartera.selectUno(1);
+    }
+    
+    public Auditor consultarAuditor(DTOAuditor dtoA) {
+        printEstoyAqui();
+        System.out.println("de auditores para consultar al auditor.");
+        
+        return (Auditor) auditores.selectUno(1);
+    }
+    
+    public Auditoria consultarAuditoria(DTOAuditoria dtoAu) {
+        printEstoyAqui();
+        System.out.println("de auditorias para consultar al auditoria.");
+        
+        return (Auditoria) auditorias.selectUno(1);
+    }
+    
+    public Contrato consultarContrato(DTOContrato dtoCo) {
+        printEstoyAqui();
+        System.out.println("de contratos para consultar el contrato.");
+        
+        return (Contrato) contratos.selectUno(1);
+    }
+    
+    /*
     public boolean borrarCliente(int id){
         //def 
         return true; 
@@ -145,7 +167,7 @@ public class Oficina {
         return true; 
     }
     
-      public boolean agregarAuditoria(DTOAuditoria info){
+    public boolean agregarAuditoria(DTOAuditoria info){
         //def 
         return true; 
     }

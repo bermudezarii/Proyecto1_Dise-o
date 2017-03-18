@@ -5,20 +5,15 @@
  */
 package Negocio;
 
-import javax.swing.JFrame;
+import Vista.FrAuditor;
 
 /**
  *
  * @author Arii
  */
-    class UIAuditor {
+public class UIAuditor {
     private DTOAuditor dtoA;
-    private Oficina oficina; 
-
-    public UIAuditor(DTOAuditor dtoA, Oficina oficina) {
-        this.dtoA = dtoA;
-        this.oficina = oficina;
-    }
+    private Oficina oficina;
 
     public DTOAuditor getDtoA() {
         return dtoA;
@@ -37,23 +32,29 @@ import javax.swing.JFrame;
     }
     
     
-    public boolean agregarAuditor(JFrame FrAuditor){
+    public boolean agregarAuditor(FrAuditor frAuditor){
         //def 
         return true; 
     }
     
-    public boolean modificarAuditor(JFrame FrAuditor){
+    public boolean modificarAuditor(FrAuditor frAuditor){
          //def 
         return true; 
     }
     
-    public boolean eliminarAuditor(JFrame FrAuditor){
+    public boolean eliminarAuditor(FrAuditor frAuditor){
          //def 
         return true; 
     }
     
-    public boolean verAuditor(JFrame FrAuditor){
-        //def 
+    public boolean verAuditor(FrAuditor frAuditor){
+        System.out.println("Estoy en el UIAuditor creando el DTOAuditor.");
+        dtoA = new DTOAuditor();
+        oficina = new Oficina();
+        
+        System.out.println("Llamando a la oficina para consultar el auditor con el dto de auditor.");
+        oficina.consultarAuditor(dtoA);
+        
         return true; 
     }
 }

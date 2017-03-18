@@ -30,6 +30,8 @@ public class Auditorias {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        FrMaster frMaster = new FrMaster();
+        frMaster.setVisible(true);
     }
     
 }

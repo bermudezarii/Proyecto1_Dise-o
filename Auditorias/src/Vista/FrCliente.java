@@ -5,17 +5,21 @@
  */
 package Vista;
 
+import Negocio.UICliente;
+
 /**
  *
  * @author Arii
  */
 public class FrCliente extends javax.swing.JFrame {
+    private UICliente uiCliente;
 
     /**
      * Creates new form FrCliente
      */
     public FrCliente() {
         initComponents();
+        System.out.println("Estoy en el frame de cliente.");
     }
 
     /**
@@ -46,23 +50,11 @@ public class FrCliente extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         txtAreaClienteResultado = new javax.swing.JTextArea();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setText("Cédula: ");
 
-        txtCedula.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCedulaActionPerformed(evt);
-            }
-        });
-
         jLabel2.setText("Nombre: ");
-
-        txtNombre.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombreActionPerformed(evt);
-            }
-        });
 
         jLabel3.setText("Primer apellido:");
 
@@ -72,7 +64,12 @@ public class FrCliente extends javax.swing.JFrame {
 
         jLabel6.setText("Correo:");
 
-        btnCargarCliente.setText("Aceptar");
+        btnCargarCliente.setText("Consultar");
+        btnCargarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCargarClienteActionPerformed(evt);
+            }
+        });
 
         jLabel7.setText("Resultado:");
 
@@ -89,7 +86,7 @@ public class FrCliente extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 294, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnCargarCliente))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -146,7 +143,7 @@ public class FrCliente extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnCargarCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -156,23 +153,21 @@ public class FrCliente extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(panelCliente)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+            .addComponent(panelCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 329, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtCedulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaActionPerformed
+    private void btnCargarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtCedulaActionPerformed
-
-    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombreActionPerformed
+        uiCliente = new UICliente();
+        uiCliente.verCliente(this);
+    }//GEN-LAST:event_btnCargarClienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -207,6 +202,10 @@ public class FrCliente extends javax.swing.JFrame {
                 new FrCliente().setVisible(true);
             }
         });
+    }
+    
+    public javax.swing.JTextField getTxtCedula() {
+        return txtCedula;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

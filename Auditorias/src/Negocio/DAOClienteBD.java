@@ -5,6 +5,8 @@
  */
 package Negocio;
 
+import Datos.Cliente;
+
 /**
  *
  * @author Arii
@@ -12,28 +14,25 @@ package Negocio;
 public class DAOClienteBD {
     
     
-    public boolean agregar(DTOCliente dtoC){
+    public boolean agregar(Cliente pCliente){
         //def 
         return true; 
     }
     
-    public boolean eliminar(DTOCliente dtoC){
+    public boolean eliminar(Cliente pCliente){
         //def 
         return true; 
     }
 
-    public boolean modificar(DTOCliente dtoC){
+    public boolean modificar(Cliente pCliente){
         //def 
         return true; 
     }
     
-    public boolean ver(DTOCliente dtoC){
-        //def 
-        return true; 
+    public Cliente ver(Cliente pCliente){
+        System.out.println("Estoy en el DAOCliente realizando la consulta.\nSe realizo la consulta.");
+        
+        return null; 
     }
-
-
-
-
 }
 

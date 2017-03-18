@@ -17,12 +17,6 @@ public class DTOAuditoria {
     //no se que hacer con el resto 
     //help 
 
-    public DTOAuditoria(int id, int tipo, int naturaleza) {
-        this.id = id;
-        this.tipo = tipo;
-        this.naturaleza = naturaleza;
-    }
-
     public int getId() {
         return id;
     }

@@ -11,8 +11,8 @@ package Datos;
  */
 public class Cliente extends Persona {
     
-    public Cliente(int cedula, String nombre, String apellido1, String apellido2, int telefono, String correo) {
-        super(cedula, nombre, apellido1, apellido2, telefono, correo);
+    public Cliente() {
+        super();
     }
     
     

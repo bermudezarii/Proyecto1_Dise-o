@@ -16,9 +16,8 @@ public class GestorCliente extends Gestor{
     private ArrayList<Cliente> clientes; 
     private DAOClienteBD daoCliente; 
 
-    public GestorCliente(ArrayList<Cliente> clientes, DAOClienteBD daoCliente) {
+    public GestorCliente() {
         this.clientes = new ArrayList<>();
-        this.daoCliente = daoCliente;
     }
 
     public DAOClienteBD getDaoCliente() {
@@ -46,7 +45,9 @@ public class GestorCliente extends Gestor{
 
     @Override
     public Object selectUno(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Estoy en el gestor de clientes llamando al DAOCliente.");
+        daoCliente = new DAOClienteBD();
+        return daoCliente.ver(new Cliente());
     }
 
     @Override

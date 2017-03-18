@@ -14,8 +14,9 @@ import java.util.ArrayList;
  */
 public class GestorContrato extends Gestor{
     private ArrayList<Contrato> contratos; 
+    private DAOContratoDB daoCo;
 
-    public GestorContrato(ArrayList<Contrato> contratos) {
+    public GestorContrato() {
         this.contratos = new ArrayList<>();
     }
        
@@ -37,7 +38,9 @@ public class GestorContrato extends Gestor{
 
     @Override
     public Object selectUno(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Estoy en el gestor de contratos llamando al DAOContratos.");
+        daoCo = new DAOContratoDB();
+        return daoCo.ver(new Contrato());
     }
 
     @Override

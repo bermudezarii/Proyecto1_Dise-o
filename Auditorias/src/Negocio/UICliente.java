@@ -5,7 +5,7 @@
  */
 package Negocio;
 
-import javax.swing.JFrame;
+import Vista.FrCliente;
 
 /**
  *
@@ -14,11 +14,6 @@ import javax.swing.JFrame;
 public class UICliente {
     private DTOCliente dtoC;
     private Oficina oficina; 
-
-    public UICliente(DTOCliente dtoC, Oficina oficina) {
-        this.dtoC = dtoC;
-        this.oficina = oficina;
-    }
 
     public Oficina getOficina() {
         return oficina;
@@ -36,23 +31,30 @@ public class UICliente {
         this.dtoC = dtoC;
     }
     
-    public boolean agregarCliente(JFrame FrCliente){
+    public boolean agregarCliente(FrCliente FrCliente){
         //def 
         return true; 
     }
     
-    public boolean modificarCliente(JFrame FrCliente){
+    public boolean modificarCliente(FrCliente FrCliente){
          //def 
         return true; 
     }
     
-    public boolean eliminarCliente(JFrame FrCliente){
+    public boolean eliminarCliente(FrCliente FrCliente){
          //def 
         return true; 
     }
     
-    public boolean verCliente(JFrame FrCliente){
-        //def 
+    public boolean verCliente(FrCliente frCliente){
+        System.out.println("Estoy en el UICliente creando el DTOCliente.");
+        
+        dtoC = new DTOCliente();
+        oficina = new Oficina();
+        
+        System.out.println("Llamando a la oficina para consultar el cliente con el dto de cliente.");
+        oficina.consultarCliente(dtoC);
+        
         return true; 
     }
     

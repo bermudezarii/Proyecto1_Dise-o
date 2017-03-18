@@ -5,28 +5,31 @@
  */
 package Negocio;
 
+import Datos.Auditoria;
+
 /**
  *
  * @author Arii
  */
 public class DAOAuditoriaBD {
-       public boolean agregar(DTOAuditoria dtoAu){
+       public boolean agregar(Auditoria pAuditoria){
         //def 
         return true; 
     }
     
-    public boolean eliminar(DTOAuditoria dtoAu){
+    public boolean eliminar(Auditoria pAuditoria){
         //def 
         return true; 
     }
 
-    public boolean modificar(DTOAuditoria dtoAu){
+    public boolean modificar(Auditoria pAuditoria){
         //def 
         return true; 
     }
     
-    public boolean ver(DTOAuditoria dtoAu){
-        //def 
-        return true; 
+    public Auditoria ver(Auditoria pAuditoria){
+        System.out.println("Estoy en el DAOAuditoria realizando la consulta.\nSe realizo la consulta.");
+        
+        return null; 
     }
 }

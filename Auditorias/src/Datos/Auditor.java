@@ -15,8 +15,8 @@ public class Auditor extends Persona {
     private GradoAcademico grado; 
     private Evaluacion nota; 
     
-    public Auditor(int cedula, String nombre, String apellido1, String apellido2, int telefono, String correo) {
-        super(cedula, nombre, apellido1, apellido2, telefono, correo);
+    public Auditor() {
+        super();
     }
 
     public GradoAcademico getGrado() {

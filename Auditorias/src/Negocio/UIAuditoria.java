@@ -5,7 +5,7 @@
  */
 package Negocio;
 
-import javax.swing.JFrame;
+import Vista.FrAuditoria;
 
 /**
  *
@@ -14,11 +14,6 @@ import javax.swing.JFrame;
 public class UIAuditoria {
     private DTOAuditoria dtoAu;
     private Oficina oficina; 
-
-    public UIAuditoria(DTOAuditoria dtoAu, Oficina oficina) {
-        this.dtoAu = dtoAu;
-        this.oficina = oficina;
-    }
 
     public DTOAuditoria getDtoAu() {
         return dtoAu;
@@ -37,23 +32,29 @@ public class UIAuditoria {
     }
    
     
-    public boolean agregarAuditoria(JFrame FrAuditoria){
+    public boolean agregarAuditoria(FrAuditoria frAuditoria){
         //def 
         return true; 
     }
     
-    public boolean modificarAuditoria(JFrame FrAuditoria){
+    public boolean modificarAuditoria(FrAuditoria frAuditoria){
          //def 
         return true; 
     }
     
-    public boolean eliminarAuditoria(JFrame FrAuditoria){
+    public boolean eliminarAuditoria(FrAuditoria frAuditoria){
          //def 
         return true; 
     }
     
-    public boolean verAuditoria(JFrame FrAuditoria){
-        //def 
+    public boolean verAuditoria(FrAuditoria frAuditoria){
+        System.out.println("Estoy en el UIAuditoria creando el DTOAuditoria.");
+        
+        dtoAu = new DTOAuditoria();
+        oficina = new Oficina();
+        
+        System.out.println("Llamando a la oficina para consultar la Auditoria con el dto de auditoria.");
+        oficina.consultarAuditoria(dtoAu);
         return true; 
     }
 }

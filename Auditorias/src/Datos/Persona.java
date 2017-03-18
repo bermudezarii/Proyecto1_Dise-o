@@ -10,21 +10,12 @@ package Datos;
  * @author Ariana
  */
 public class Persona {
-    private int cedula; 
-    private String nombre; 
-    private String apellido1; 
-    private String apellido2; 
-    private int telefono; 
-    private String correo; 
-
-    public Persona(int cedula, String nombre, String apellido1, String apellido2, int telefono, String correo) {
-        this.cedula = cedula;
-        this.nombre = nombre;
-        this.apellido1 = apellido1;
-        this.apellido2 = apellido2;
-        this.telefono = telefono;
-        this.correo = correo;
-    }
+    protected int cedula; 
+    protected String nombre; 
+    protected String apellido1; 
+    protected String apellido2; 
+    protected int telefono; 
+    protected String correo; 
 
     public String getCorreo() {
         return correo;
